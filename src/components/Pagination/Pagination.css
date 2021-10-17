@@ -1,0 +1,23 @@
+.pagination {
+    &__pages {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__prev {}
+    &__next {}
+    &__current {
+        margin: 0 20px;
+    }
+
+    &__limit {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+
+        &-label {
+                margin-right: 10px;
+        }
+    }
+}

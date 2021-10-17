@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= htmlWebpackPlugin.options.title %></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="minimal-ui, width=device-width,initial-scale=1.0,minimum-scale=1.0">
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
+
+        <% for (var key in htmlWebpackPlugin.files.css) { %>
+            <link href="<%= htmlWebpackPlugin.files.css[key] %>" rel="stylesheet">
+        <% } %>
+    </head>
+
+    <body>
+        <div id="root"></div>
+        <% for (var key in htmlWebpackPlugin.files.js) { %>
+            <script src="<%= htmlWebpackPlugin.files.js[key] %>"></script>
+        <% } %>
+    </body>
+</html>

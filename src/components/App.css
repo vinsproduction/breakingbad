@@ -1,0 +1,37 @@
+.app {
+    padding: 30px 20px 50px 20px ;
+    max-width: 950px;
+    margin: 0 auto;
+
+    &__pagination {
+        margin-top: 40px;
+    }
+
+    &__loader,
+    &__status {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+    }
+
+    &__search-label {
+        cursor: pointer;
+        border-bottom: 1px dotted #000;
+        user-select: none;
+    }
+
+    &__search-expand {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__search-content {
+        display: none;
+        &_opened {
+            display: block;
+        }
+    }
+}

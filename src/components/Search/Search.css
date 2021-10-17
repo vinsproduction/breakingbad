@@ -1,0 +1,19 @@
+.search {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+
+    &__input {
+        &_disabled {
+            background: #CCCC;
+        }
+    }
+
+    &__button {
+        margin-left: 10px;
+
+        &_disabled {
+            background: #CCCC;
+        }
+    }
+}
